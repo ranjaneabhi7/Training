@@ -1,0 +1,144 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="keywords" content="software, digital marketing, training, laptop sales">
+		<meta name="viewport" content="width=device-width, initital-scale=1;">
+		<meta name="" content="">
+		<meta name="" content="">
+		<style>
+			body{
+				margin: 0;
+			}
+			
+			header{
+				background-color: skyblue;
+				padding: 20px;
+				position: sticky;
+				top: 0px;
+			}
+			
+			#logo{
+				height: 50px;
+				width: 50px;
+				margin-right: 10px;
+				position: absolute;
+				top: 30%;
+			}
+			
+			#title{
+				color: white;
+				text-shadow: 1px 1px 2px black;
+				padding-left: 70px;
+			}
+			
+			#menu{
+				text-align: right;
+				font-size: 22px;
+				position: absolute;
+				top: 40%;
+				right:0px;
+			}
+			.primaryMenu{
+				margin-right: 20px;
+				text-decoration: none;
+				color: white;
+			}
+			a:hover{
+				color: black;
+				font-size: 25px;
+			}
+			
+			footer{
+				background-color: skyblue;
+				text-align: center;
+				position: fixed;
+				bottom: 0px;
+				width: 100%;
+			}
+			
+			nav{
+				float: left;
+				width: 30%;
+				height: 800px;
+				margin: 0;
+				background-color: rgba(80,105,180,0.7);
+			}
+			
+			#training{
+				position: absolute;
+				top: 50%;
+			}
+			
+			article{
+				float: left;
+				width: 70%;
+				height: 800px;
+				background-color: yellow;
+			}
+			
+			section{
+				clear: both;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<header>
+			<img id="logo" src="tree.png"></img>
+			<h1 id="title">Ranjane IT Services</h1>
+			
+			<div id="menu">
+				<a href="Index.html" class="primaryMenu">Home</a>
+				<a href="Services.html" class="primaryMenu">Services</a>
+				<a href="Contactus" class="primaryMenu">Contact us</a>
+			</div>
+		</header>
+		
+		<section>
+			<nav>
+				<div id="training">
+					<button type="button" onclick="funHTML()">HTML</button>
+					<button type="button" onclick="funCSS()">CSS</button>
+					<button type="button" onclick="funJavaScript()">JavaScript</button>
+				</div>
+			</nav>
+			
+			<article>
+				<h3 id="courseTitle">Welcome</h3>
+				<p id="courseContent">Hello</p>
+				<img id="courseImage" src="1.png" style="width: 0px; height: 0px;" alt="course image"></img>
+			</article>
+		</section>
+		
+		<script>
+			function funHTML()
+			{
+				document.getElementById('courseTitle').innerHTML="What is HTML";
+				document.getElementById('courseContent').innerHTML="The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser. It is often assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript.<br> Web browsers receive HTML documents from a web server or from local storage and render the documents into multimedia web pages. HTML describes the structure of a web page semantically and originally included cues for its appearance.";
+				document.getElementById("courseImage").src="html.png";
+				document.getElementById('courseImage').style="width: 200px; height: 200px";
+			}
+			
+			function funCSS()
+			{
+				document.getElementById('courseTitle').innerHTML="What is CSS";
+				document.getElementById('courseContent').innerHTML="Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language such as HTML or XML (including XML dialects such as SVG, MathML or XHTML). CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript. CSS is designed to enable the separation of content and presentation, including layout, colors, and fonts. This separation can improve content accessibility; provide more flexibility and control in the specification of presentation characteristics; enable multiple web pages to share formatting by specifying the relevant CSS in a separate .css file, which reduces complexity and repetition in the structural content; and enable the .css file to be cached to improve the page load speed between the pages that share the file and its formatting.";
+				document.getElementById("courseImage").src="css.png";
+				document.getElementById('courseImage').style="width: 200px; height: 200px";
+			}
+			
+			function funJavaScript()
+			{
+				document.getElementById('courseTitle').innerHTML="What is JavaScript";
+				document.getElementById('courseContent').innerHTML="JavaScript, often abbreviated as JS, is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS. As of 2023, 98.7% of websites use JavaScript on the client side for webpage behavior, often incorporating third-party libraries. All major web browsers have a dedicated JavaScript engine to execute the code on users' devices.";
+				document.getElementById("courseImage").src="javascript.png";
+				document.getElementById('courseImage').style="width: 200px; height: 200px";
+			}
+		</script>
+		
+		<footer>
+			<p>Powered by Ranjane IT Services</p>
+		</footer>
+	</body>
+</html>
